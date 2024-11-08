@@ -1,6 +1,6 @@
 from escape_room import EscapeRoom
 from lock import Lock
-from adventurelib import Room, Item, Bag
+from adventurelib import Room, Item, Bag, say
 
 class Staircase(EscapeRoom):
 
@@ -46,5 +46,7 @@ class Staircase(EscapeRoom):
 
     # Define the escape in this method. This will be triggered once all the puzzles are completed
     def escape(self):
-        self.escape_room("direction", "description of what happens next")
-       # e.g  self.escape_room("east","The door slides open reavealing the next room")
+
+        pass
+       # say("The door slides open reavealing the next room")
+       # say(f"Go {self.escape_direction} to the next room")

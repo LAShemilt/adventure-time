@@ -34,6 +34,7 @@ class Entrance(EscapeRoom):
 
 
 
+
     def room_completed(self):
         if self.keypad.locked:
             self.locked=True
